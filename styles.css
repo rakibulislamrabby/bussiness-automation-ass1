@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00c4cc;
+  color: white;
+  /* padding: 10px 0; */
+  margin: 20px 0;
+}
+
+.contact-info {
+  display: flex;
+  /* justify-content: center; */
+  margin: 10px;
+  margin-left: 100px;
+  gap: 20px;
+}
+.contact-info i {
+  color: #00c4cc;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+nav .logo img {
+  width: 50px;
+  height: auto;
+  background-color: white;
+  padding: 0 10px;
+  padding-bottom: 5px;
+
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a,
+.auth-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.auth-links {
+  display: flex;
+  gap: 20px;
+}
+.main-section {
+  margin: 0 90px;
+}
+
+
+/* ***************hero-section start************ */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 20px;
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+}
+.hero-text{
+    padding-top: 5rem;
+}
+.play-icon {
+  font-size: 50px;
+}
+.text-mico {
+  font-size: 50px;
+  color: black;
+}
+/* .text-hospital{
+        font-size: 50px;
+} */
+.hero h1 {
+  margin: 0;
+  color: #00c4cc;
+  font-size: 50px;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.hero button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hero button:hover{
+    background-color: #00c4cc;
+}
+.hero button:active{
+    background-color: #069ea4;
+}
+
+.hero img {
+  width: 80%;
+  max-width: 600px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 150px;
+  background-image: url("/images/dots.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+.hero .slider-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero .slider-buttons button {
+    background-color: #00c4cc;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-buttons button:hover{
+    background-color: black;
+}
+.hero .slider-buttons button i {
+    font-size: 16px;
+}
+/* ***************hero-section end************ */
+
+.appointment {
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.appointment h2 {
+    text-align: left;
+    color: #00c4cc;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+
+.text-book{
+    color: black;
+    
+}
+.appointment form {
+    max-width: 150vh;
+    margin: 0 auto;
+    
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00c4cc;
+    box-sizing: border-box;
+    color: #00c4cc;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+button[type="submit"]:hover{
+    background-color:#00c4cc;
+}
+button[type="submit"]:active{
+    background-color:#069ea4;
+}
